@@ -1,0 +1,29 @@
+cd python/training/detection/ssd
+
+
+python3 train_ssd.py --dataset-type=voc --data=data/drone_1048 --model-dir=models/bird2 --batch-size=4 --workers=1 --epochs=65
+
+python3 onnx_export.py --model-dir=models/bird2
+
+
+
+
+detectnet.py --model=models/bird2//ssd-mobilenet.onnx --labels=models/bird2/labels.txt --input-blob=input_0 --output-cvg=scores --output-bbox=boxes data/drone_bird_final.mp4
+
+
+Epoch: 64, Validation Loss: 0.8138, Validation Regression Loss 0.1653, Validation Classification Loss: 0.6485
+
+
+
+imagenet.py --model=models/my_data_50/resnet18.onnx --labels=data/my_data/labels.txt --input_blob=input_0 --output_blob=output_0 /dev/video0
+
+
+export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1
+
+
+net = jetson.inference.imageNet('',['--model=models/my_data_50/resnet18.onnx','--labels=data/my_data/labels.txt','--input_blob=input_0','--output_blob=output_0'])
+
+  ############### training ###########################
+cp -av data/test /jetson-inference/python/training/classification/
+export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1
+python3 train.py --model-dir=models/my_data_450 --batch-size=4 --workers=1 --epochs=50 data/my_data_450

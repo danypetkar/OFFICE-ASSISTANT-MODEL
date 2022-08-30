@@ -1,0 +1,29 @@
+1  ping 4.2.2.2
+    2  sudo apt-get remove --purge libreoffice*
+    3  sudo apt-get remove --purge thunderbird*
+    4  sudo fallocate -l 10.0G /swapfile1
+    5  sudo chmod 600 /swapfile1
+    6  sudo mkswap /swapfile1
+    7  sudo vim /etc/fstab
+    8  vim ~/.bashrc 
+    9  sudo apt-get update
+   10  reboot
+   11  sudo apt-get install git cmake
+   12  git clone https://github.com/dusty-nv/jetson-inference
+   13  cd jetson-inference/
+   14  git submodule update --init
+   15  sudo apt-get install libpython3-dev python3-numpy
+   16  ls
+   17  mkdir build
+   18  cd build/
+   19  sudo cmake ../
+   20  sudo make
+   21  sudo make install
+   22  sudo ldconfig
+   23  detectnet.py /dev/video0 
+   24  history
+ cd jetson-inference/python/training/detection/ssd/
+mkdir models
+wget https://nvidia.box.com/shared/static/djf5w54rjvpqocsiztzaandq1m3avr7c.pth -O models/mobilenet-v1-ssd-mp-0_675.pth
+
+
