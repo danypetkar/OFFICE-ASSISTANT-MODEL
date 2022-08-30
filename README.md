@@ -189,24 +189,28 @@ For this project I applied gray-scale augmentation on some images using
 
 
 
-Step 4: After Testing, paste “my_data_450” folder which contain Images to train model into location “/jetson-inference/python/training/classification/data”
+## Step 4: After Testing, paste “my_data_450” folder which contain Images to train model into location “/jetson-inference/python/training/classification/data”
 
-Step 5: Training Image classification Model using ResNet18.
-#cd  /jetson-inference/python/training/classification/
-python3 train.py --model-dir=models/my_data_450 --batch-size=4 --workers=1 --epochs=50 data/my_data_450
-Now convert the model to ONNX
-#python3 onnx_export.py –model-dir=models/my_data_450
-Now testing model using webcam
-#imagenet.py –model=models/my_data_450/resnet18.onnx –input_blob=input_0 –output_blob=output_0 –labels=data/my_data_450/labels.txt /dev/video0
+## Step 5: Training Image classification Model using ResNet18.
 
-Step 6: Detection Using OpenCV
-#sudo pip3 install speechrecognition
-#sudo pip3 install sounddevice pyaudio google-api-python-client
-Now copy haarcascade_frontalface_default.xml file into “/jetson-inference/python/training/classification/”
-Make python file aaa.py
+```bash
+    #cd  /jetson-inference/python/training/classification/
+    python3 train.py --model-dir=models/my_data_450 --batch-size=4 --workers=1 --epochs=50 data/my_data_450
+    Now convert the model to ONNX
+    #python3 onnx_export.py –model-dir=models/my_data_450
+    Now testing model using webcam
+    #imagenet.py –model=models/my_data_450/resnet18.onnx –input_blob=input_0 –output_blob=output_0 –labels=data/my_data_450/labels.txt /dev/video0
+```
+## Step 6: Detection Using OpenCV
 
+```bash
+    #sudo pip3 install speechrecognition
+    #sudo pip3 install sounddevice pyaudio google-api-python-client
+    Now copy haarcascade_frontalface_default.xml file into “/jetson-inference/python/training/classification/”
+    Make python file aaa.py
+```
+## jetson for
 
-# jetson for
 import speech_recognition as sr
 from gtts import gTTS
 import os
