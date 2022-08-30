@@ -14,12 +14,17 @@ Using appropriate data sets for recognizing and interpreting data using machine 
 
 To show on the optical viewfinder of the camera module whether a given object is a Person and then greet and converse with them.
 
-## ABSTRACT
+## ABSTRACT:
 •	An object is classified based on whether it is a Person or not and then shown on the viewfinder of the camera.
+
 •	I have completed this project on jetson nano which is a very small computational device.
+
 •	A lot of research is being conducted in the field of Computer Vision and Machine Learning (ML), where machines are trained to identify various objects from one another. Machine Learning provides various techniques through which various objects can be detected.
+
 •	A conversing AI is the need of the day as population increases and when the workforce is not able to manage peak hours in a store this AI becomes a helping hand for the workforce.
+
 •	When a person is detected by the viewfinder of camera they are first greeted by the AI and then asked about how the AI can help in solving their problem.
+
 ## INTRODUCTION
 •	This project is based on Person detection and then converse with them model. We are going to implement this project with Machine Learning and this project will be run on jetson Nano.
 •	This project can also be used to gather information about the needs of a customer and further increase our database about what a person will want in the future.
