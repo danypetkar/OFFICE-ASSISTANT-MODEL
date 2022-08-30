@@ -1,11 +1,17 @@
 # OFFICE-ASSISTANT-MODEL
 
 ## AIM AND OBJECTIVES
-Aim
+
+### Aim
+
 To create a model which can greet and converse lightly between a customer when they visit a shop or store and thus help reduce the load on the working staff and help customers with simple queries about the product and services offered by the store.
-Objectives:
+
+### Objectives:
+
 The main objective of the project is to create a program which can be run on Jetson nano and start detecting using the camera module connected to the device.
+
 Using appropriate data sets for recognizing and interpreting data using machine learning.
+
 To show on the optical viewfinder of the camera module whether a given object is a Person and then greet and converse with them.
 
 ## ABSTRACT
