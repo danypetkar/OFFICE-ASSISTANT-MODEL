@@ -296,7 +296,8 @@ For this project I applied gray-scale augmentation on some images using
 
 ```
 
-Step 7: Run final Project
-#python3 aaa.py
-
+## Step 7: Run final Project
+```bash
+    #python3 aaa.py
+```
 
