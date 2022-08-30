@@ -191,7 +191,7 @@ For this project I applied gray-scale augmentation on some images using
 
 ### Step 4: After Testing, paste “my_data_450” folder which contain Images to train model into location “/jetson-inference/python/training/classification/data”
 
-## Step 5: Training Image classification Model using ResNet18.
+### Step 5: Training Image classification Model using ResNet18.
 
 ```bash
     cd  /jetson-inference/python/training/classification/
@@ -300,4 +300,44 @@ For this project I applied gray-scale augmentation on some images using
 ```bash
     python3 aaa.py
 ```
+## ADVANTAGES:
+•	AI chatbots provide an even higher level of customer service, improve searching, send notifications about new collections, and suggest similar products.
+
+•	Retailers also invest in technologies that help customers in the shopping process and also help staff in stores. At the same time, it helps with inventory management thanks to real-time monitoring capabilities.
+
+•	Applications of AI for retail stores could help businesses set prices for their products, visualizing the likely outcomes of multiple pricing strategies.
+
+•	Leftovers and out-of-stock scenarios can be eliminated. AI in the retail supply chain can be used for restocking — calculating the demand for a particular product by taking into account a history of sales, location, weather, trends, promotions, and other parameters.
+
+•	It can work around the clock and therefore can detect all day long.
+
+•	When completely automated no user input is required and therefore works with absolute efficiency and speed.
+
+## APPLICATION:
+
+•	Detects an object and then shows whether the object is Person or not in each image frame or viewfinder using a camera module and then begins conversing.
+
+•	According to a retail executives survey by Capgemini at the AI in Retail Conference, the application of the technology in retail could save up to $340 billion each year for the industry by 2020. An estimated 80% of these savings will come from AI’s improvement of supply chain management and returns.
+
+•	Can be used as a reference for other ai models based on Office Assistant Model
+
+## FUTURE SCOPE:
+•	As we know technology is marching towards automation, so this project is one of the step towards automation.
+
+•	Thus, for more accurate results it needs to be trained for more images, and for a greater number of epochs.
+
+•	Office Assistant model can be very easily implemented in places where workforce is sparse.
+
+•	Conversational commerce could become all the more prevalent in the metaverse, the virtual reality representation of the internet, with voice-enabled shopping potentially accounting for 30% of all ecommerce revenues by 2030.
+
+•	Office Assistant model can be further improved by adding more images and conversational data of different People with newer models to further improve the detection and hence be future ready.
+
+
+## CONCLUSION:
+
+•	In this project our model is trying to detect a Person and then begin conversing with them.
+
+•	This model tries to solve the problem of places where Workforce gets easily overwhelmed by the number of customer’s every day at peak hours and hence can be of great help there.
+
+•	The model is efficient and highly accurate and hence works without any lag and also as the data is already exported to model folder can be made to work offline.
 
