@@ -1,6 +1,6 @@
-# OFFICE-ASSISTANT-MODEL
+# OFFICE ASSISTANT MODEL
 
-## AIM AND OBJECTIVES
+## AIM AND OBJECTIVES:
 
 ### Aim
 
@@ -110,7 +110,7 @@ Jetson Nano
 ## INSTALLATION:
 
 
-## Step 1: Data collection
+### Step 1: Data collection
 
 For Data collection we are using OpenCV with Haarcascade to capture only Front Face.
 
@@ -150,11 +150,11 @@ For Data collection we are using OpenCV with Haarcascade to capture only Front F
 We need to change folder name every time for different-different person. And took 350 images for each Dany, Piyush and Nikhil.
 And make labels.txt
 
-## Step 2: Data Augmentation
+##3 Step 2: Data Augmentation
 
 For this project I applied gray-scale augmentation on some images using
 
-## Step 3: Build the project directly on your Jetson.
+### Step 3: Build the project directly on your Jetson.
 
 ```bash
     sudo apt-get remove --purge libreoffice*
@@ -189,27 +189,27 @@ For this project I applied gray-scale augmentation on some images using
 
 
 
-## Step 4: After Testing, paste “my_data_450” folder which contain Images to train model into location “/jetson-inference/python/training/classification/data”
+### Step 4: After Testing, paste “my_data_450” folder which contain Images to train model into location “/jetson-inference/python/training/classification/data”
 
 ## Step 5: Training Image classification Model using ResNet18.
 
 ```bash
-    #cd  /jetson-inference/python/training/classification/
+    cd  /jetson-inference/python/training/classification/
     python3 train.py --model-dir=models/my_data_450 --batch-size=4 --workers=1 --epochs=50 data/my_data_450
     Now convert the model to ONNX
-    #python3 onnx_export.py –model-dir=models/my_data_450
+    python3 onnx_export.py –model-dir=models/my_data_450
     Now testing model using webcam
-    #imagenet.py –model=models/my_data_450/resnet18.onnx –input_blob=input_0 –output_blob=output_0 –labels=data/my_data_450/labels.txt /dev/video0
+    imagenet.py –model=models/my_data_450/resnet18.onnx –input_blob=input_0 –output_blob=output_0 –labels=data/my_data_450/labels.txt /dev/video0
 ```
-## Step 6: Detection Using OpenCV
+### Step 6: Detection Using OpenCV
 
 ```bash
-    #sudo pip3 install speechrecognition
-    #sudo pip3 install sounddevice pyaudio google-api-python-client
+    sudo pip3 install speechrecognition
+    sudo pip3 install sounddevice pyaudio google-api-python-client
     Now copy haarcascade_frontalface_default.xml file into “/jetson-inference/python/training/classification/”
     Make python file aaa.py
 ```
-## jetson for
+### jetson for
 ```bash
     import speech_recognition as sr
     from gtts import gTTS
@@ -296,8 +296,8 @@ For this project I applied gray-scale augmentation on some images using
 
 ```
 
-## Step 7: Run final Project
+### Step 7: Run final Project
 ```bash
-    #python3 aaa.py
+    python3 aaa.py
 ```
 
