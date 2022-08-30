@@ -25,50 +25,86 @@ To show on the optical viewfinder of the camera module whether a given object is
 
 •	When a person is detected by the viewfinder of camera they are first greeted by the AI and then asked about how the AI can help in solving their problem.
 
-## INTRODUCTION
+## INTRODUCTION:
+
 •	This project is based on Person detection and then converse with them model. We are going to implement this project with Machine Learning and this project will be run on jetson Nano.
+
 •	This project can also be used to gather information about the needs of a customer and further increase our database about what a person will want in the future.
+
 •	Person detection becomes difficult sometimes because of various sizes of People, also their distance from camera module as well as the time of the day which can make them harder for model to detect. And conversing with different people is hard as their needs are different.
+
 •	Neural networks and machine learning have been used for these tasks and have obtained good results.
+
 •	Machine learning algorithms have proven to be very useful in pattern recognition and classification, and hence can be used for Person recognition and conversations.
-## LITERATURE REVIEW
+
+## LITERATURE REVIEW:
+
 •	Conversational Commerce brings together online messaging like live chat and conversational AI together to deliver a refined shopping experience to customers 24/7. Customers are offered a personalized shopping experience like never before since the dawn of online shopping.  
+
 •	For decades, traditional analytics have worked perfectly fine for the data-driven retail industry. However, Artificial Intelligence (AI) and Machine Learning (ML) have introduced an entirely new level of data processing which leads to deeper business insights. Data scientists could open a new world of possibilities to business owners extracting anomalies and correlations from hundreds of Artificial Intelligence/Machine Learning models.
+
 •	Between 2013 and 2018, Artificial Intelligence startups raised $1.8 billion in 374 deals, according to CB Insights. Amazon can take credit for these impressive numbers because they made business leaders change their minds about Artificial Intelligence in the retail market – both physical stores and e-commerce strategies to stay ahead of the competition. At the moment over 28% of retailers are already deploying Artificial Intelligence/Machine Learning solutions, which is a sevenfold increase from 2016 when the number was only 4%.
+
 •	In an era where consumers are constantly expecting personalized services, Conversational AI can be seen across the value chain. It is emerging as a powerful tool for retail businesses to help retailers align their offerings with the evolving customer expectations. Many brand leaders look at it as a solution to gain a strategic advantage over their competition. As a result, retail enterprises are increasingly leveraging the power of AI-driven data and emerging retail chatbot technologies to optimize customer experience, both online and offline. And the one consumer-oriented solution that retailers are relying on is Conversational AI.
+
 •	Conversational AI can automate in-store operations and reduce a substantial amount of operational expenses in retail stores. It can help sales personnel to assist customers in the store, reduce queues through contactless payment methods, replenish stock by real-time stock monitoring, and overall improve the in-store experience for customers. A report by Aspect Software has revealed that 73% of customers prefer self-service options during their purchase journey and expect a faster checkout – a fact which does provide a strong impetus to retailers to implement Conversational AI solutions.
+
 •	Digitally evolving multichannel retail has made store operations more complex. Store assistants are no longer restricted to receiving goods, stocking them, and managing inventories. They are expected to provide product information, keep track of promotional offers and handle merchandising for their customers. Conversational AI can be effectively utilized for such productive work, thereby saving a lot of time for your store agents to focus on other complex tasks. In simple terms, customers always expect a streamlined purchase journey, and Conversational AI chatbots steal the show in retail.
+
 •	Conversational AI is also capable of detecting the mood, intent, and interest of your customers throughout the purchase journey. Some global retail brands have even introduced a facial recognition system for this function installed at checkout lanes. If a customer is annoyed, a store representative will immediately talk to him or her. Retail Chatbots also leverage the intent prediction feature to understand customers' tone, context, and behavior. It helps retailers build stronger relationships with customers by providing personalized assistance throughout the conversational flow.
+
 •	Conversational AI can be deployed across different channels, hence providing brands an opportunity to create an omnichannel customer experience. These retail chatbots are capable of serving 24/7 and are significantly cheaper than onboarding more agents with rotational shifts. If the customer support query is complex or beyond the scope of the retail chatbot, there is a seamless process to hand off the query to a live agent based on their skill sets and current workload. This enables a smooth hassle-free customer experience for the support teams in the retail industry.
+
 •	Over the last few years, news of the retail ‘e-pocalypse’ has spread far and wide. A string of public lay-offs and bankruptcies have plagued the sector in recent times. Store closure announcements that increased by over 200% in the last few years, were no different.
+
 •	When it comes to retail, the online and offline worlds are both crucial and hence, need to be connected. Conversational AI plays a crucial role in bridging the gap between them – guaranteeing a uniform online and offline experience for customers. By engaging with retail chatbots, customers can browse through inventories and familiarize themselves with product offerings, and promotional deals, before they make it to the store. Thus, Conversational AI can contribute to a more positive and fulfilling in-store experience for customers, raising their overall engagement with retail brands and driving repeat visits.
+
 •	The robotization of stores will result in reducing lines, lowering the number of human employees, and significant savings on operational expenses. 
+
 ## JETSON NANO COMPATIBILITY
 
 •	The power of modern AI is now available for makers, learners, and embedded developers everywhere.
+
 •	NVIDIA® Jetson Nano™ Developer Kit is a small, powerful computer that lets you run multiple neural networks in parallel for applications like image classification, object detection, segmentation, and speech processing. All in an easy-to-use platform that runs in as little as 5 watts.
+
 •	Hence due to ease of process as well as reduced cost of implementation we have used Jetson nano for model detection and training.
+
 •	NVIDIA JetPack SDK is the most comprehensive solution for building end-to-end accelerated AI applications. All Jetson modules and developer kits are supported by JetPack SDK.
+
 •	In our model we have used JetPack version 4.6 which is the latest production release and supports all Jetson modules.
+
 ## OTHER DEVICES:
 
 
 ## PROPOSED SYSTEM:
+
 1.	Study basics of machine learning and image recognition.
+
 2.	Start with implementation
+
 •	Front-end development
+
 •	Back-end development
+
 3.	Testing, analyzing and improvising the model. Machine learning libraries will be using machine learning to identify a object and then classify it according to whether it’s a Person or not.
+
 4.	Use data sets to interpret the object and show on viewfinder with a bounding box annotation whether it is Person or not.
 
 ## METHODOLOGY:
 The Office Assistant model is a program that focuses on implementing real time classification.
+
 It is a prototype of a new product that comprises of the main module:
+
 Jetson Nano
+
 1. Object Detection
+
 •	Ability to detect the location of Object in any input image or frame. The output is the bounding box coordinates on the detected Object.
+
 •	This Data set identifies Object in a Bitmap graphic object and returns the bounding box image with annotation of name present.
+
 2. Classification and process
+
 •	Classification of the object based on whether it is Person or not on the viewfinder.
 
 ## INSTALLATION:
