@@ -60,8 +60,8 @@ Jetson Nano
 2. Classification and process
 •	Classification of the object based on whether it is Person or not on the viewfinder.
 
-INSTALLATION:
-'''bash
+## INSTALLATION:
+
 Step 1: Data collection
 For Data collection we are using OpenCV with Haarcascade to capture only Front Face.
 import cv2
@@ -236,4 +236,4 @@ cv2.destroyAllWindows()
 Step 7: Run final Project
 #python3 aaa.py
 
-'''
+
