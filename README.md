@@ -110,9 +110,10 @@ Jetson Nano
 ## INSTALLATION:
 
 
-Step 1: Data collection
+## Step 1: Data collection
 
 For Data collection we are using OpenCV with Haarcascade to capture only Front Face.
+
 ```bash
     import cv2
     import glob
@@ -148,37 +149,43 @@ For Data collection we are using OpenCV with Haarcascade to capture only Front F
 
 We need to change folder name every time for different-different person. And took 350 images for each Dany, Piyush and Nikhil.
 And make labels.txt
-Step 2: Data Augmentation
+
+## Step 2: Data Augmentation
+
 For this project I applied gray-scale augmentation on some images using
 
-Step 3: Build the project directly on your Jetson.
-sudo apt-get remove --purge libreoffice*
-sudo apt-get remove --purge thunderbird*
-sudo fallocate -l 10.0G /swapfile1
-sudo chmod 600 /swapfile1
-sudo mkswap /swapfile1
-sudo vim /etc/fstab
-vim ~/.bashrc 
-export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1
-sudo apt-get update
-reboot
-sudo apt-get install git cmake
-git clone https://github.com/dusty-nv/jetson-inference
-cd jetson-inference/
-git submodule update --init
-sudo apt-get install libpython3-dev python3-numpy
-sudo apt-get install flac
-ls
-mkdir build
-cd build/
-sudo cmake ../
-sudo make
-sudo make install
-sudo ldconfig
-detectnet.py /dev/video0 
-cd jetson-inference/python/training/detection/ssd/
-mkdir models
-wget https://nvidia.box.com/shared/static/djf5w54rjvpqocsiztzaandq1m3avr7c.pth -O models/mobilenet-v1-ssd-mp-0_675.pth
+## Step 3: Build the project directly on your Jetson.
+
+```bash
+    sudo apt-get remove --purge libreoffice*
+    sudo apt-get remove --purge thunderbird*
+    sudo fallocate -l 10.0G /swapfile1
+    sudo chmod 600 /swapfile1
+    sudo mkswap /swapfile1
+    sudo vim /etc/fstab
+    vim ~/.bashrc 
+    export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1
+    sudo apt-get update
+    reboot
+    sudo apt-get install git cmake
+    git clone https://github.com/dusty-nv/jetson-inference
+    cd jetson-inference/
+    git submodule update --init
+    sudo apt-get install libpython3-dev python3-numpy
+    sudo apt-get install flac
+    ls
+    mkdir build
+    cd build/
+    sudo cmake ../
+    sudo make
+    sudo make install
+    sudo ldconfig
+    testing_____
+    detectnet.py /dev/video0 
+    cd jetson-inference/python/training/detection/ssd/
+    mkdir models
+    wget https://nvidia.box.com/shared/static/djf5w54rjvpqocsiztzaandq1m3avr7c.pth -O models/mobilenet-v1-ssd-mp-0_675.pth
+```
 
 
 
