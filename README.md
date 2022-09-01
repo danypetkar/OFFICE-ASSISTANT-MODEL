@@ -74,7 +74,7 @@ To show on the optical viewfinder of the camera module whether a given object is
 •	In our model we have used JetPack version 4.6 which is the latest production release and supports all Jetson modules.
 
 ## OTHER DEVICES:
-
+![App Screenshot]()
 
 ## PROPOSED SYSTEM:
 
