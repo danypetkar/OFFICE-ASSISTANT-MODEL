@@ -300,6 +300,11 @@ For this project I applied gray-scale augmentation on some images using
 ```bash
     python3 aaa.py
 ```
+
+## Demo
+
+[![Final detection](https://i.ytimg.com/vi/kdzlJknRwKc/maxresdefault.jpg)](https://www.youtube.com/watch?v=kdzlJknRwKc "Final detection")
+
 ## ADVANTAGES:
 •	AI chatbots provide an even higher level of customer service, improve searching, send notifications about new collections, and suggest similar products.
 
