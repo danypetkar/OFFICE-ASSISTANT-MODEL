@@ -61,7 +61,7 @@ while(True):
                         elif text == 'how are you':
                             ans = 'i am fine'
                         else:
-                            ans = 'teri saale nikal'
+                            ans = 'Enjoy your time'
                         tts=gTTS(text=ans,lang="en")
                         filename = "ans.mp3"
                         tts.save(filename)
